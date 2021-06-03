@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navbar {
+  background-color: #3fa14c;
+}
+
+.navbar ul {
+  margin: 0 auto;
+  list-style: none;
+  padding: 12px 0;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 700;
+  padding: 0 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.apresentation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 43px);
+  font-family: 'Montserrat', sans-serif;
+  background: url("/images/background.png");
+}
+
+.apresentation div {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.apresentation h1 {
+  font-size: 0;
+  font-weight: 900;
+  opacity: 0.0;
+  animation-name: viewTitle;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.apresentation .edition-event {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.apresentation .locality-event {
+  color: #3fa14c;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.apresentation hr {
+  border: 0;
+  width: 100%;
+  height: 2px;
+  margin: 24px 0;
+  background-color: #fff;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* Conteúdo - Principal */
+.general {
+  width: 100%;
+  background-color: #3fa14c;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.general h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  border-left: 6px solid #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.guests-container {
+  padding: 32px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.guests {
+  display: flex;
+  overflow: auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.guests:hover {
+  cursor: pointer;
+}
+
+.guests div {
+  max-width: 204px;
+  min-width: 204px;
+  padding: 12px;
+}
+
+.guests img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.guests p {
+  color: #ececec;
+  margin-top: 16px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.calendar-container-external {
+  width: 100%;
+  background-color: #ececec;
+}
+
+.calendar-container-internal {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 32px;
+}
+
+.calendar-container-external h2 {
+  color: #255a2c;
+  margin-bottom: 28px;
+  border-color: #255a2c;
+}
+
+.calendar-cards {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.calendar-cards .calendar-card {
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  margin-bottom: 16px;
+  background-color: #255a2c;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.calendar-card > p {
+  color: #ececec;
+  font-weight: 600;
+}
+
+.calendar-card hr {
+  border: 0;
+  width: 90%;
+  height: 1px;
+  margin: 8px auto;
+  background-color: #3fa14c;
+}
+
+.calendar-card div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.calendar-card div p {
+  color: #ececec;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.calendar-card .name-class {
+  width: 80%;
+  text-align: left;
+}
+
+.calendar-card .time-class {
+  width: 20%;
+  text-align: right;
+}
+
+.sign-up {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sign-up div {
+  padding: 32px;
+}
+
+.sign-up div a {
+  display: block;
+  margin: 0 auto;
+  font-size: 28px;
+  max-width: 200px;
+  color: #3fa14c;
+  font-weight: 800;
+  padding: 10px 12px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  position: relative;
+  background-color: #ececec;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.sign-up div a:hover {
+  animation-name: rotateButton;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+footer {
+  padding: 16px 0;
+  background-color: #255a2c;
+}
+
+footer p {
+  color: #ececec;
+  text-align: center;
+}
+
+@keyframes viewTitle {
+  0% {
+    opacity: 0.0;
+    font-size: 18px;
+  }
+  50% {
+    opacity: 0.3;
+    font-size: 28px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 32px;
+  }
+}
+
+@keyframes rotateButton {
+  to { 
+    transform: rotate(5deg);
+    box-shadow: 10px 0px 1px 1px rgba(0, 0, 0, 0.8);
+  }
+  from { 
+    transform: rotate(-5deg);
+    box-shadow: -10px 0px 1px 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar a {
+    padding: 0 24px;
+  }
+
+  .apresentation div {
+    width: 600px;
+  }
+
+  .apresentation h1 {
+    font-size: 64px;
+    font-weight: 900;
+  }
+
+  .calendar-card {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 6px 10px;
+  }
+
+  .calendar-cards {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  @keyframes viewTitle {
+    0% {
+      opacity: 0.0;
+      font-size: 36px;
+    }
+    50% {
+      opacity: 0.3;
+      font-size: 48px;
+    }
+    100% {
+      opacity: 1;
+      font-size: 64px;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .calendar-cards {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .calendar-card {
+    margin: 0;
+  }
+}
