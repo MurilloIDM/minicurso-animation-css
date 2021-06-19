@@ -11,11 +11,11 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.navbar {
+.menu {
   background-color: #3fa14c;
 }
 
-.navbar ul {
+.menu ul {
   margin: 0 auto;
   list-style: none;
   padding: 12px 0;
@@ -23,11 +23,11 @@ body {
   text-align: center;
 }
 
-.navbar li {
+.menu li {
   display: inline-block;
 }
 
-.navbar a {
+.menu a {
   color: white;
   font-weight: 700;
   padding: 0 12px;
@@ -35,7 +35,7 @@ body {
   display: inline-block;
 }
 
-.apresentation {
+.apresentacao {
   width: 100%;
   display: flex;
   align-items: center;
@@ -45,14 +45,14 @@ body {
   background: url("/images/background.png");
 }
 
-.apresentation div {
+.apresentacao div {
   width: 100%;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 
-.apresentation h1 {
+.apresentacao h1 {
   font-size: 0;
   font-weight: 900;
   opacity: 0.0;
@@ -61,12 +61,12 @@ body {
   animation-fill-mode: forwards;
 }
 
-.apresentation .edition-event {
+.texto-edicao {
   font-size: 24px;
   font-weight: 700;
 }
 
-.apresentation .locality-event {
+.texto-local {
   color: #3fa14c;
   font-size: 18px;
   font-weight: 700;
@@ -74,7 +74,7 @@ body {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 }
 
-.apresentation hr {
+.apresentacao hr {
   border: 0;
   width: 100%;
   height: 2px;
@@ -82,18 +82,18 @@ body {
   background-color: #fff;
 }
 
-.text-shadow {
+.texto-shadow {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 /* Conteúdo - Principal */
-.general {
+.conteudo {
   width: 100%;
   background-color: #3fa14c;
   font-family: 'Montserrat', sans-serif;
 }
 
-.general h2 {
+.conteudo h2 {
   color: #fff;
   font-size: 28px;
   font-weight: 500;
@@ -103,66 +103,66 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.guests-container {
+.caixa-convidados {
   padding: 32px;
   margin: 0 auto;
   max-width: 1000px;
 }
 
-.guests {
+.convidados {
   display: flex;
   overflow: auto;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.guests:hover {
+.convidados:hover {
   cursor: pointer;
 }
 
-.guests div {
+.convidados div {
   max-width: 204px;
   min-width: 204px;
   padding: 12px;
 }
 
-.guests img {
+.convidados img {
   width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 100%;
 }
 
-.guests p {
-  color: #ececec;
+.convidados p {
+  color: #fff;
   margin-top: 16px;
   font-size: 20px;
   text-align: center;
 }
 
-.calendar-container-external {
+.caixa-calendario-externo {
   width: 100%;
-  background-color: #ececec;
+  background-color: #fff;
 }
 
-.calendar-container-internal {
+.caixa-calendario-interno {
   margin: 0 auto;
   max-width: 1000px;
   padding: 32px;
 }
 
-.calendar-container-external h2 {
+.caixa-calendario-externo h2 {
   color: #255a2c;
   margin-bottom: 28px;
   border-color: #255a2c;
 }
 
-.calendar-cards {
+.cards-calendario {
   display: flex;
   flex-flow: column wrap;
 }
 
-.calendar-cards .calendar-card {
+.calendario {
   width: 100%;
   padding: 8px 0;
   text-align: center;
@@ -172,12 +172,12 @@ body {
   border-bottom-right-radius: 18px;
 }
 
-.calendar-card > p {
-  color: #ececec;
+.calendario > p {
+  color: #fff;
   font-weight: 600;
 }
 
-.calendar-card hr {
+.calendario hr {
   border: 0;
   width: 90%;
   height: 1px;
@@ -185,39 +185,39 @@ body {
   background-color: #3fa14c;
 }
 
-.calendar-card div {
+.calendario div {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
 }
 
-.calendar-card div p {
-  color: #ececec;
+.calendario div p {
+  color: #fff;
   font-weight: 500;
   margin-bottom: 6px;
 }
 
-.calendar-card .name-class {
+.nome-palestra {
   width: 80%;
   text-align: left;
 }
 
-.calendar-card .time-class {
+.hora-palestra {
   width: 20%;
   text-align: right;
 }
 
-.sign-up {
+.inscricao {
   margin: 0 auto;
   max-width: 1000px;
 }
 
-.sign-up div {
+.inscricao div {
   padding: 32px;
 }
 
-.sign-up div a {
+.inscricao div a {
   display: block;
   margin: 0 auto;
   font-size: 28px;
@@ -229,7 +229,7 @@ body {
   border-radius: 12px;
   text-decoration: none;
   position: relative;
-  background-color: #ececec;
+  background-color: #fff;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
   animation-name: rotateButton;
   animation-duration: 0.6s;
@@ -244,7 +244,7 @@ footer {
 }
 
 footer p {
-  color: #ececec;
+  color: #fff;
   text-align: center;
 }
 
@@ -275,26 +275,26 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar a {
+  .menu a {
     padding: 0 24px;
   }
 
-  .apresentation div {
+  .apresentacao div {
     width: 600px;
   }
 
-  .apresentation h1 {
+  .apresentacao h1 {
     font-size: 64px;
     font-weight: 900;
   }
 
-  .calendar-card {
+  .calendario {
     max-width: 300px;
     min-width: 300px;
     margin: 6px 10px;
   }
 
-  .calendar-cards {
+  .cards-calendario {
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -318,12 +318,12 @@ footer p {
 
 
 @media screen and (min-width: 1024px) {
-  .calendar-cards {
+  .cards-calendario {
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  .calendar-card {
+  .calendario {
     margin: 0;
   }
 }
